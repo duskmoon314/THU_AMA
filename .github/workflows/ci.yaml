@@ -23,14 +23,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup typst-book
-        run: cargo install --git https://github.com/Myriad-Dreamin/typst-book typst-book-cli
-
       - name: Cache deps
         uses: Swatinem/rust-cache@v2
 
+      - name: Setup typst-book
+        run: cargo install --git https://github.com/Myriad-Dreamin/typst-book typst-book-cli
+
       - name: Build book
-        run: typst-book build --path-to-root ${{ github.event.repository.name }}
+        run: typst-book build --path-to-root ${{ github.event.repository.name }}/
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
