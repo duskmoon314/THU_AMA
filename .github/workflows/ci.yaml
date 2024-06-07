@@ -30,7 +30,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Build book
-        run: typst-book build
+        run: typst-book build --path-to-root ${{ github.event.repository.name }}
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
