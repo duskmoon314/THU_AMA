@@ -21,9 +21,7 @@
 #let dash-color = rgb(theme-style.at("dash-color"))
 
 #let main-font = (
-  "Charter",
-  "Source Han Serif SC",
-  "Source Han Serif TC",
+  "Noto Sans CJK SC",
   // typst-book's embedded font
   "Linux Libertine",
 )
