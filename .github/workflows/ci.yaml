@@ -30,7 +30,7 @@ jobs:
         run: cargo install --git https://github.com/Myriad-Dreamin/typst-book typst-book-cli
 
       - name: Build book
-        run: typst-book build --path-to-root ${{ github.event.repository.name }}/
+        run: typst-book build --path-to-root /${{ github.event.repository.name }}/
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
