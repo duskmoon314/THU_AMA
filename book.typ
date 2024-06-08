@@ -26,7 +26,10 @@
 
 // Other preamble
 #import "@preview/ctheorems:1.1.2": *
-#let thmrules = thmrules
+#let thmrules = thmrules.with(qed-symbol: $square$)
 #let theorem = thmbox("theorem", "定理", fill: rgb("#b3e2cd"))
 #let definition = thmbox("definition", "定义", fill: rgb("#fdcdac"))
+#let example = thmbox("example", "例", fill: rgb("#cbd5e8"))
+#let corollary = thmbox("corollary", "推论", fill: rgb("#f4cae4"))
 #let remark = thmplain("remark", "注").with(number: none)
+#let proof = thmplain("proof", "证明").with(number: none)

@@ -105,7 +105,7 @@
   // set text style
   set text(
     font: main-font,
-    size: 18pt,
+    size: 16pt,
     fill: main-color,
     lang: "en",
   )
