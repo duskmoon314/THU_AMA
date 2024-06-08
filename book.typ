@@ -18,6 +18,16 @@
     - #chapter("docs/ch2/0-群论.typ", section: "2")[群论]
       - #chapter("docs/ch2/1-概念与例子.typ", section: "2.1")[概念与例子]
       - #chapter("docs/ch2/2-内部结构.typ", section: "2.2")[内部结构]
+      - #chapter("docs/ch2/3-外部联系.typ", section: "2.3")[外部联系]
+      - #chapter("docs/ch2/4-群在集合上的作用.typ", section: "2.4")[群在集合上的作用]
+      - #chapter("docs/ch2/5-群的应用.typ", section: "2.5")[群的应用]
+    - #chapter("docs/ch3/0-环论.typ", section: "3")[环论]
+      - #chapter("docs/ch3/1-基本概念与例子.typ", section: "3.1")[基本概念与例子]
+      - #chapter("docs/ch3/2-环的内部结构.typ", section: "3.2")[环的内部结构]
+      - #chapter("docs/ch3/3-特殊环.typ", section: "3.3")[特殊环]
+      - #chapter("docs/ch3/4-环的应用.typ", section: "3.4")[环的应用]
+    - #chapter("docs/ch4/0-域论.typ", section: "4")[域论]
+      - #chapter("docs/ch4/1-域和域扩张.typ", section: "4.1")[域和域扩张]
   ],
 )
 
@@ -37,7 +47,7 @@
 
 #let remark = thmplain("remark", "注").with(number: none)
 #let proof = thmplain("proof", "证明").with(number: none)
-#let soultion = thmplain("solution", "解").with(number: none)
+#let solution = thmplain("solution", "解").with(number: none)
 
 #let cyclicgroup(body) = {
   $angle.l #body angle.r$

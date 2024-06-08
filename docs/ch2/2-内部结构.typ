@@ -798,7 +798,7 @@ $a^(k_1) lr((a^(k_2)))^(-) 1 = a^(k_1 - k_2) in cyclicgroup(a)$
   求$C lr((G)) , C_G lr((H)) , C_G lr((g))$
 ]
 
-#soultion()[
+#solution()[
 
   设$A = mat(delim: "(", a, b;c, d) in C lr((G))$，则$forall X in G$有$A X = X A$
 
@@ -819,7 +819,7 @@ $a^(k_1) lr((a^(k_2)))^(-) 1 = a^(k_1 - k_2) in cyclicgroup(a)$
   $S_4$中求$a = lr((12))$的中心化子
 ]
 
-#soultion()[
+#solution()[
 
   $angle.l a angle.r subset.eq C_G lr((a))$且与1，2无关的置换（与a不相交）也含在$C_G lr((a))$
 
@@ -917,7 +917,7 @@ $arrow.r.double cal(A)$有划分，$cal(A) = union.sq.big_(H in cal(A)) K_H arro
   设$H$是$G$中唯一的n阶子群，则$H lt.tri.eq G$
 ]
 
-#soultion()[
+#solution()[
 
   $lr(|H|) =^(?) lr(|g H g^(- 1)|) arrow.r.double H = g H g^(- 1) arrow.l.r.double g H = H g arrow.l.r.double H lt.tri.eq G lr((forall g))$
 
