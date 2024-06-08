@@ -17,6 +17,7 @@
       - #chapter("docs/ch1/3-例题与应用.typ", section: "1.3")[例题与应用]
     - #chapter("docs/ch2/0-群论.typ", section: "2")[群论]
       - #chapter("docs/ch2/1-概念与例子.typ", section: "2.1")[概念与例子]
+      - #chapter("docs/ch2/2-内部结构.typ", section: "2.2")[内部结构]
   ],
 )
 
@@ -31,5 +32,13 @@
 #let definition = thmbox("definition", "定义", fill: rgb("#fdcdac"))
 #let example = thmbox("example", "例", fill: rgb("#cbd5e8"))
 #let corollary = thmbox("corollary", "推论", fill: rgb("#f4cae4"))
+#let property = thmbox("property", "性质", fill: rgb("#e6f5c9"))
+#let proposition = thmbox("proposition", "命题", fill: rgb("#fff2ae"))
+
 #let remark = thmplain("remark", "注").with(number: none)
 #let proof = thmplain("proof", "证明").with(number: none)
+#let soultion = thmplain("solution", "解").with(number: none)
+
+#let cyclicgroup(body) = {
+  $angle.l #body angle.r$
+}
